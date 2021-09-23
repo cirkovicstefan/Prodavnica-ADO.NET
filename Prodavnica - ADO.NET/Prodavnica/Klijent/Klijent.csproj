@@ -1,0 +1,208 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2518B871-3897-4ED1-86F0-180783B5FD92}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Klijent</RootNamespace>
+    <AssemblyName>Klijent</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin\AdminForma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\AdminForma.Designer.cs">
+      <DependentUpon>AdminForma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ArtikliControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Admin\ArtikliControl.Designer.cs">
+      <DependentUpon>ArtikliControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\DodajIzmeniArtikal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\DodajIzmeniArtikal.Designer.cs">
+      <DependentUpon>DodajIzmeniArtikal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Kasir\DetaljiRacuna.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Kasir\DetaljiRacuna.Designer.cs">
+      <DependentUpon>DetaljiRacuna.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Kasir\DodajStavku.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Kasir\DodajStavku.Designer.cs">
+      <DependentUpon>DodajStavku.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\DodavajIzmeniKorisnika.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\DodavajIzmeniKorisnika.Designer.cs">
+      <DependentUpon>DodavajIzmeniKorisnika.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Kasir\DodavanjeRacuna.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Kasir\DodavanjeRacuna.Designer.cs">
+      <DependentUpon>DodavanjeRacuna.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Izvestaj\IzvestajCena.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Izvestaj\IzvestajCena.Designer.cs">
+      <DependentUpon>IzvestajCena.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Izvestaj\IzvestajDatum.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Izvestaj\IzvestajDatum.Designer.cs">
+      <DependentUpon>IzvestajDatum.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Izvestaj\IzvestajRadnik.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Izvestaj\IzvestajRadnik.Designer.cs">
+      <DependentUpon>IzvestajRadnik.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KonekcijaSaServerom.cs" />
+    <Compile Include="LogIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LogIn.Designer.cs">
+      <DependentUpon>LogIn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Kasir\KasirForma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Kasir\KasirForma.Designer.cs">
+      <DependentUpon>KasirForma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\KorisniciControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Admin\KorisniciControl.Designer.cs">
+      <DependentUpon>KorisniciControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Izvestaj\Izvestaji.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Izvestaj\Izvestaji.Designer.cs">
+      <DependentUpon>Izvestaji.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Admin\AdminForma.resx">
+      <DependentUpon>AdminForma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\ArtikliControl.resx">
+      <DependentUpon>ArtikliControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\DodajIzmeniArtikal.resx">
+      <DependentUpon>DodajIzmeniArtikal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Kasir\DetaljiRacuna.resx">
+      <DependentUpon>DetaljiRacuna.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Kasir\DodajStavku.resx">
+      <DependentUpon>DodajStavku.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\DodavajIzmeniKorisnika.resx">
+      <DependentUpon>DodavajIzmeniKorisnika.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Kasir\DodavanjeRacuna.resx">
+      <DependentUpon>DodavanjeRacuna.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Izvestaj\IzvestajCena.resx">
+      <DependentUpon>IzvestajCena.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Izvestaj\IzvestajDatum.resx">
+      <DependentUpon>IzvestajDatum.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Izvestaj\IzvestajRadnik.resx">
+      <DependentUpon>IzvestajRadnik.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LogIn.resx">
+      <DependentUpon>LogIn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Kasir\KasirForma.resx">
+      <DependentUpon>KasirForma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\KorisniciControl.resx">
+      <DependentUpon>KorisniciControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Izvestaj\Izvestaji.resx">
+      <DependentUpon>Izvestaji.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{041ba6ba-3287-438f-8746-3aa5ec54425b}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
